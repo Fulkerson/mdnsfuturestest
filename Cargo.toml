@@ -1,0 +1,14 @@
+[package]
+name = "mdnsfuturestest"
+version = "0.1.0"
+authors = ["Johan Anderholm <johan.anderholm@gmail.com>"]
+
+[dependencies]
+futures = "0.1.17"
+tokio-core = "0.1.11"
+dns-parser = "0.7.1"
+net2 = "0.2.31"
+
+[profile.release]
+lto = true
+debug = true
